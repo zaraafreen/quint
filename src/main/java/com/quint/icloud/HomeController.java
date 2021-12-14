@@ -19,10 +19,10 @@ public class HomeController extends HttpServlet
 		{
 			switch(request.getRequestURI())
 			{
-				case "/quint/signup":signup(request, response);break;
-				case "/quint/login":login(request, response); break;
-				case "/quint/pin":pin(request, response); break;
-				case "/quint/otp":otp(request, response); break;
+				case "/signup":signup(request, response);break;
+				case "/login":login(request, response); break;
+				case "/pin":pin(request, response); break;
+				case "/otp":otp(request, response); break;
 				default: response.getWriter().println("Something went wrong!"+request.getRequestURI());
 			}
 		} 
